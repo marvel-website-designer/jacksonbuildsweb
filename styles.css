@@ -1,0 +1,328 @@
+ * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: linear-gradient(90deg, #f1e6bd, #3b3e41);
+      color: #111;
+    }
+
+    /* ============================  NAV BAR HEADER ============================*/    
+
+    /* Core navbar styling */
+    .navbar {
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 20px;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.6);
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+        padding: 1rem 2rem;
+        margin: 2rem auto;
+        max-width: 1200px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: max-height 0.4s ease, padding 0.4s ease;
+        overflow: hidden;
+        flex-wrap: wrap;
+    }
+
+
+    .nav-left {
+    font-weight: 700;
+    font-size: 1.2rem;
+    font-family: "Molle", cursive;
+    color: #111827;
+    }
+    .nav-left-a {
+    text-decoration: none;
+    color: #111827;
+    }
+
+    /* Center and Right Links */
+    .nav-center a {
+        margin: 0 1rem;
+        text-decoration: none;
+        color: #333;
+        font-weight: 500;
+        font-size: 0.95rem;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .btn-nav {
+        background: #1d4ed8;
+        color: white;
+        padding: 0.5rem 1.2rem;
+        border-radius: 999px;
+        text-decoration: none;
+        font-family: "Molle", cursive;
+    }
+
+    /* ==================================== Toggle button hidden by default ========================================== */
+    .nav-toggle {
+        display: none;
+        cursor: pointer;
+    }
+
+    .menu-svg {
+        width: 28px;
+        height: 28px;
+        transition: transform 0.3s ease;
+    }
+
+
+     /* ============================ CONTAINER LANDING SECTION ============================ */
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 1rem 1.5rem;
+      position: relative;
+    }
+
+
+
+        /* ============================ HERO Description ============================ */
+
+        .hero {
+          max-width: 600px;
+        }
+
+        .hero h2 {
+          font-family: "Molle", cursive;
+          font-weight: 600;
+          font-style: normal;
+        }
+
+        .hero h3 {
+          font-family: "Inter", cursive;
+          font-weight: 900;
+          font-style: normal;
+        }
+
+        .hero h1 {
+          font-size: 4.5rem;
+          line-height: 1;
+          font-weight: 600;
+          margin-bottom: .5rem;
+          color: #111827;
+          font-family: "Manufacturing Consent", system-ui;
+          font-weight: 400;
+          font-style: italic;
+
+        }
+
+        .hero .subtext {
+          font-size: 1rem;
+          color: #374151;
+          margin-bottom: 1rem;
+          max-width: 500px;
+          font-family: "Molle", cursive;
+          font-weight: 400;
+          font-style: normal;
+        }
+
+        .buttons {
+          display: flex;
+          gap: 1rem;
+        }
+
+        .btn-dark {
+          background: #111827;
+          color: white;
+          padding: 0.85rem 1.9rem;
+          border-radius: 22px;
+          font-weight: 600;
+          text-decoration: none;
+          border: none;
+        }
+
+
+
+        /* ==================================== HERO SIDE IMAGE ======================================== */
+
+        .screenshot {
+          position: absolute;
+          right: 0;
+          top: 0;
+          width: 35em;
+          /* overflow: hidden; */
+        }
+        .screenshot img {
+          width: 100%;
+          border-radius: 0 0 50% 50%; /* Curved bottom */
+          animation: bounce 2s infinite ease-in-out;
+        }
+
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-30px);
+            }
+        }
+
+
+
+
+    /* ====================================== TAB version ======================================== */
+    @media (max-width: 1024px) {
+    .nav-toggle {
+        display: block;
+    }
+
+    .nav-center,
+    .nav-right {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-end;
+        transition: all 0.3s ease;
+        overflow: hidden;
+        max-height: 0;
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    .navbar.expanded {
+        padding-bottom: 1rem;
+    }
+
+    .navbar.expanded .nav-center,
+    .navbar.expanded .nav-right {
+        max-height: 50em;
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    .navbar.expanded .menu-svg {
+        transform: rotate(45deg);
+    }
+
+    .navbar.expanded .menu-svg path {
+        d: path("M6 18L18 6M6 6l12 12"); /* Animated to X */
+    }
+
+    .nav-center a {
+        margin: 0.5rem 0;
+        display: block;
+        font-size: 1rem;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+
+    .nav-center a.active {
+        margin-top: 20px;
+    }
+    .nav-right a {
+        font-size: 1.4rem;
+        font-weight: 700;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(49, 65, 245);
+        padding: .6em 9em;
+        color: #fff;
+        border-radius: 999px;
+    }
+    }
+
+
+    /* ====================================== MOBIL version ======================================== */
+        @media (max-width: 728px) {
+
+            .nav-right a {
+            font-size: .8rem;
+            font-weight: 500;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(49, 65, 245);
+            padding: 1em 9em;
+            color: #fff;
+            border-radius: 999px;
+        }
+
+
+             /* ============================ HERO Description ============================ */
+
+        .hero h2 {
+          font-family: "Molle", cursive;
+          font-weight: 400;
+          font-style: normal;
+        }
+
+        .hero h3 {
+          font-family: "Inter", cursive;
+          font-weight: 900;
+          font-style: normal;
+        }
+
+        .hero h1 {
+          font-size: 4.5rem;
+          line-height: 1;
+          font-weight: 600;
+          margin-bottom: .5rem;
+          color: #111827;
+          font-family: "Manufacturing Consent", system-ui;
+          font-weight: 400;
+          font-style: italic;
+
+        }
+
+        .hero .subtext {
+          font-size: 1rem;
+          color: #374151;
+          margin-bottom: 1rem;
+          /* max-width: 500px; */
+          font-family: "Molle", cursive;
+          font-weight: 400;
+        }
+
+        .buttons {
+          display: flex;
+          gap: 1rem;
+        }
+
+        .btn-dark {
+          background: #111827;
+          color: white;
+          padding: 0.85rem 1.9rem;
+          border-radius: 22px;
+          font-weight: 600;
+          text-decoration: none;
+          border: none;
+        }
+
+
+
+        /* ==================================== HERO SIDE IMAGE ======================================== */
+
+        .screenshot {
+          position: absolute;
+          right: 0;
+          top: 0;
+          width: 30em;
+          /* overflow: hidden; */
+          display: none;
+        }
+        .screenshot img {
+          width: 100%;
+          border-radius: 0 0 50% 50%; /* Curved bottom */
+          animation: bounce 2s infinite ease-in-out;
+        }
+
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-30px);
+            }
+        }
+
+
+    }
