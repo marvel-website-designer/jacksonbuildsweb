@@ -1,4 +1,37 @@
- * {
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Space+Grotesk:wght@500;700&display=swap');
+
+:root {
+  /* === COLORS === */
+  --color-bg: #0F1117;
+  --color-text: #FFFFFF;
+  --color-muted: #A0A0A0;
+  --color-accent: #00FFF5;
+  --color-accent-light: #1BFF8C;
+  --color-glass: rgba(15, 17, 23, 0.8);
+  --color-border: rgba(255, 255, 255, 0.1);
+  --color-shadow: rgba(0, 0, 0, 0.4);
+
+  /* === FONT FAMILIES === */
+  --font-primary: 'Inter', sans-serif;
+  --font-heading: 'Space Grotesk', sans-serif;
+
+  /* === BORDER RADIUS === */
+  --radius-lg: 20px;
+  --radius-full: 999px;
+
+  /* === SPACING === */
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 2rem;
+
+  /* === TRANSITION === */
+  --transition-fast: 0.3s ease;
+  --transition-med: 0.4s ease;
+}
+
+
+
+* {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
@@ -13,22 +46,23 @@
 
     /* Core navbar styling */
     .navbar {
-        background: rgba(255, 255, 255, 0.2);
-        border-radius: 20px;
-        backdrop-filter: blur(10px);
-        -webkit-backdrop-filter: blur(10px);
-        border: 1px solid rgba(255, 255, 255, 0.6);
-        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
-        padding: 1rem 2rem;
-        margin: 2rem auto;
-        max-width: 1200px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        transition: max-height 0.4s ease, padding 0.4s ease;
-        overflow: hidden;
-        flex-wrap: wrap;
-    }
+      background: var(--color-glass);
+      border-radius: var(--radius-lg);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid var(--color-border);
+      box-shadow: 0 8px 32px var(--color-shadow);
+      padding: var(--space-md) var(--space-lg);
+      margin: var(--space-lg) auto;
+      max-width: 1200px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: max-height var(--transition-med), padding var(--transition-med);
+      overflow: hidden;
+      flex-wrap: wrap;
+}
+
 
 
     .nav-left {

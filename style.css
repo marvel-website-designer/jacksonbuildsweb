@@ -47,7 +47,7 @@
 
 /* =============================================== NAVIGATION =============================================== */
   .navbar {
-    background: rgba(15, 17, 23, 0.8);
+    background: rgba(15, 17, 23, .3);
     border-radius: 20px;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
@@ -117,7 +117,7 @@
     transition: transform 0.3s ease;
   }
 
-/* =============================================== CONTAINER =============================================== */
+/* =============================================== LANDING PAGE SECTION(HOME) CONTAINER =============================================== */
   .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -244,7 +244,154 @@
   }
 
 
-/* ====================================== TAB version ======================================== */
+/* =============================================== END OF LANDING PAGE SECTION(HOME) CONTAINER =============================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =============================================== ABOUT PAGE SECTION(ABOUT) CONTAINER =============================================== */
+
+
+
+
+
+
+
+
+ .about-section {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: var(--space-lg) var(--space-md);
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 2rem;
+    flex-wrap: wrap;
+    font-family: var(--font-primary);
+    color: var(--color-text);
+    background-color: var(--color-bg);
+  }
+
+  .about-text {
+    flex: 1 1 50%;
+    min-width: 300px;
+  }
+
+  .about-text h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    font-family: var(--font-heading);
+    color: #00FFF5;
+  }
+
+  .about-text p {
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 1.2rem;
+    color: var(--color-muted);
+  }
+
+  .blog-btn {
+    background-color: var(--color-text);
+    color: var(--color-bg);
+    border: none;
+    padding: var(--space-sm) var(--space-md);
+    border-radius: var(--radius-lg);
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+  }
+
+  .blog-btn:hover {
+    background-color: var(--color-accent-light);
+    color: var(--color-bg);
+  }
+
+  .about-images {
+    flex: 1 1 47%;
+    display: flex;
+    /* gap: 1.5rem; */
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .photo-card {
+    background: var(--color-text);
+    border-radius: var(--radius-lg);
+    padding: var(--space-sm);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    text-align: center;
+    width: 240px;
+    height: 265px;
+    transform: rotate(-10deg);
+    transition: transform var(--transition-fast);
+  }
+
+  .photo-card:nth-child(2) {
+    transform: rotate(10deg);
+  }
+
+  .photo-card:hover {
+    transform: scale(1.05);
+  }
+
+  .photo-card img {
+    width: 100%;
+    height: 91%;
+    border-radius: 12px;
+    display: block;
+    margin-bottom: var(--space-sm);
+  }
+
+  .photo-card p {
+    font-size: 0.9rem;
+    color: var(--color-bg);
+  }
+
+  @media (max-width: 768px) {
+    .about-section {
+      flex-direction: column;
+      padding: var(--space-md);
+    }
+
+    .about-images {
+      justify-content: center;
+    }
+
+    .photo-card {
+      width: 180px;
+      height: 200px;
+      gap: 1.5rem;
+    }
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ====================================== TAB VERSION ======================================== */
     @media (max-width: 1024px) {
       .nav-toggle {
           display: block;
@@ -304,6 +451,27 @@
           color: #fff;
           border-radius: 999px;
       }
+      
+
+
+
+/* =============================================== END OF LANDING PAGE SECTION(HOME) CONTAINER =============================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+/* =============================================== ABOUT PAGE SECTION(ABOUT) CONTAINER =============================================== */
+
+
+
     }
 
 
@@ -388,6 +556,27 @@
                 transform: translateY(-30px);
             }
         }
+
+              
+
+
+
+/* =============================================== END OF LANDING PAGE SECTION(HOME) CONTAINER =============================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+/* =============================================== ABOUT PAGE SECTION(ABOUT) CONTAINER =============================================== */
+
+
 
 
     }
