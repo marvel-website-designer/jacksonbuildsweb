@@ -1,0 +1,290 @@
+ * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: linear-gradient(90deg, #f1e6bd, #3b3e41);
+      color: #111;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /* ============================  NAV BAR HEADER ============================*/
+
+    .navbar {
+      background: white;
+      border-radius: 999px;
+      padding: 1rem 2rem;
+      margin: 2rem 7.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+      /* margin-bottom: 4rem; */
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 20px;
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.6);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    }
+
+    .nav-left {
+      font-weight: 700;
+      font-size: 1.2rem;
+      font-family: "Molle", cursive;
+      font-weight: 600;
+    }
+    .nav-left-a {
+      text-decoration: none;
+      color: #111827;
+    }
+
+    .nav-center a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      font-size: 0.95rem;
+    }
+
+    
+    .nav-right a {
+      text-decoration: none;
+      margin-left: 1rem;
+      font-weight: 500;
+      font-size: 0.95rem;
+    }
+    .size-6 {
+      width: 1.5rem;
+      height: 1.5rem;
+      color: #111827;
+      display: none;
+    }
+    .fa-solid {
+      display: none;
+    }
+
+    .hire-btn {
+      background: #1d4ed8;
+      color: white;
+      padding: 0.5rem 1.2rem;
+      border-radius: 999px;
+      font-family: "Molle", cursive;
+    }
+
+    .size-6 {
+      width: 1.5rem;
+      height: 1.5rem;
+      color: #111827;
+      display: none;
+    }
+
+   .badge {
+      display: inline-block;
+      background: white;
+      color: #3b82f6;
+      padding: 0.3rem 0.8rem;
+      border-radius: 999px;
+      font-size: 0.75rem;
+      font-weight: 500;
+      margin-bottom: 1.5rem;
+    }
+
+    /* .btn-light {
+      background: white;
+      color: #111827;
+      padding: 0.75rem 1.5rem;
+      border-radius: 999px;
+      font-weight: 600;
+      text-decoration: none;
+      border: 1px solid #ddd;
+    } */
+
+
+    /* ============================ CONTAINER LANDING SECTION ============================ */
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 1rem 1.5rem;
+      position: relative;
+    }
+
+
+
+        /* ============================ HERO Description ============================ */
+
+        .hero {
+          max-width: 600px;
+        }
+
+        .hero h2 {
+          font-family: "Molle", cursive;
+          font-weight: 600;
+          font-style: normal;
+        }
+
+        .hero h3 {
+          font-family: "Inter", cursive;
+          font-weight: 900;
+          font-style: normal;
+          text-decoration: underline;
+        }
+
+        .hero h1 {
+          font-size: 4.5rem;
+          line-height: 1;
+          font-weight: 600;
+          margin-bottom: .5rem;
+          color: #111827;
+          font-family: "Manufacturing Consent", system-ui;
+          font-weight: 400;
+          font-style: italic;
+
+        }
+
+        .hero .subtext {
+          font-size: 1rem;
+          color: #374151;
+          margin-bottom: 1rem;
+          max-width: 500px;
+          font-family: "Molle", cursive;
+          font-weight: 400;
+          font-style: normal;
+        }
+
+        .buttons {
+          display: flex;
+          gap: 1rem;
+        }
+
+        .btn-dark {
+          background: #111827;
+          color: white;
+          padding: 0.85rem 1.9rem;
+          border-radius: 22px;
+          font-weight: 600;
+          text-decoration: none;
+          border: none;
+        }
+
+
+
+        /* ==================================== HERO SIDE IMAGE ======================================== */
+
+        .screenshot {
+          position: absolute;
+          right: 0;
+          top: 0;
+          width: 35em;
+          /* overflow: hidden; */
+        }
+        .screenshot img {
+          width: 100%;
+          border-radius: 0 0 50% 50%; /* Curved bottom */
+          animation: bounce 2s infinite ease-in-out;
+        }
+
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-30px);
+            }
+        }
+
+
+
+    /* ======================================= TAB Responsive ======================================= */
+
+    @media (max-width: 1024px) {
+
+      /* ============================  NAV BAR HEADER ============================*/
+
+      .navbar {
+        background: white;
+        border-radius: 999px;
+        padding: 1rem 2rem;
+        margin: 2rem 7.5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+        /* margin-bottom: 4rem; */
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 20px;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.6);
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+      }
+
+      .nav-left {
+        font-weight: 700;
+        font-size: 1.2rem;
+        font-family: "Molle", cursive;
+        font-weight: 600;
+      }
+      .nav-left-a {
+        text-decoration: none;
+        color: #111827;
+      }
+
+      .nav-center a {
+        margin: 0 1rem;
+        text-decoration: none;
+        color: #333;
+        font-weight: 500;
+        font-size: 0.95rem;
+      }
+
+      .nav-right {
+        text-decoration: none;
+        margin-left: 1rem;
+        font-weight: 500;
+        font-size: 0.95rem;
+        display: block;
+      }
+      
+      /* ============================================ HERO SECTION ==================================== */
+      .screenshot {
+        position: relative;
+        width: 100%;
+        max-width: 100%;
+        margin-top: 3rem;
+      }
+
+      .hero {
+        max-width: 100%;
+      }
+
+      .container {
+        text-align: center;
+      }
+
+      .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+      }
+
+      .nav-center, .nav-right {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+
+      .buttons {
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+    }
+
+
+    /* MOBILE Responsive */
+
