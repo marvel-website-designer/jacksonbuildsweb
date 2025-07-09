@@ -362,20 +362,7 @@
   }
 
   @media (max-width: 768px) {
-    .about-section {
-      flex-direction: column;
-      padding: var(--space-md);
-    }
-
-    .about-images {
-      justify-content: center;
-    }
-
-    .photo-card {
-      width: 180px;
-      height: 200px;
-      gap: 1.5rem;
-    }
+  
 
   }
 
@@ -433,7 +420,7 @@
           display: block;
           font-size: 1.3rem;
           font-family: Arial, Helvetica, sans-serif;
-          font-weight: 700;
+          font-weight: 500;
           margin-bottom: 20px;
           line-height: 1.6;
           letter-spacing: -1.2px;
@@ -471,6 +458,21 @@
 
 
 /* =============================================== ABOUT PAGE SECTION(ABOUT) CONTAINER =============================================== */
+
+      .about-section {
+        flex-direction: column;
+        padding: var(--space-md);
+      }
+
+      .about-images {
+        justify-content: center;
+      }
+
+      .photo-card {
+        width: 180px;
+        height: 200px;
+        gap: 1.5rem;
+      }
 
 
 
