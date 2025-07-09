@@ -1,4 +1,5 @@
- const toggleBtn = document.getElementById("navToggle");
+// ==================================================================== MENU BAR
+const toggleBtn = document.getElementById("navToggle");
   const navbar = document.getElementById("navbar");
   const icon = document.getElementById("menuIcon");
 
@@ -8,8 +9,7 @@
     // Toggle icon (X or menu)
     if (navbar.classList.contains("expanded")) {
       icon.innerHTML = `
-        <path stroke-linecap="round" stroke-linejoin="round"
-        d="M6 18L18 6M6 6l12 12" />
+        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
       `;
     } else {
       icon.innerHTML = `
@@ -20,7 +20,36 @@
 
 
 
-// Contact Form
+
+
+// ================================================================== FAQ
+
+ // FAQ accordion toggle
+
+    const faqItems = document.querySelectorAll('.faq-item');
+
+    faqItems.forEach(item => {
+      const question = item.querySelector('.faq-question');
+      question.addEventListener('click', () => {
+        const isOpen = item.classList.contains('active');
+        faqItems.forEach(i => i.classList.remove('active'));
+        if (!isOpen) item.classList.add('active');
+      });
+    });
+
+    // const faqItems = document.querySelectorAll('.faq-item');
+
+    // faqItems.forEach(item => {
+    //   item.querySelector('.faq-question').addEventListener('click', () => {
+    //     item.classList.toggle('active');
+    //   });
+    // });
+
+
+
+
+
+// ====================================================================== Contact Form
 // Initialize EmailJS when the page loads
     window.onload = function() {
         emailjs.init("MVb5oOj-xdmsSLWND"); // Your EmailJS Public Key

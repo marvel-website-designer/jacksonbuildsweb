@@ -8,7 +8,7 @@
   --color-accent: #00FFF5;
   --color-accent-light: #1BFF8C;
   --color-glass: rgba(15, 17, 23, 0.8);
-  --color-border: rgba(255, 255, 255, 0.1);
+  --color-border: #333;
   --color-shadow: rgba(0, 0, 0, 0.4);
 
   /* === FONT FAMILIES === */
@@ -39,7 +39,7 @@
    body {
     background: #0F1117;
     color: #FFFFFF;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     opacity: 0;
     transform: scale(0.98);
     animation: fadeInScale 0.8s ease forwards;
@@ -47,11 +47,13 @@
 
 /* =============================================== NAVIGATION =============================================== */
   .navbar {
-    background: rgba(15, 17, 23, .3);
-    border-radius: 20px;
+    /* background: rgba(15, 17, 23, .3);
+    backdrop-filter: blur(10px); */
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(15, 17, 23, 1));
     backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid var(--color-border);
     -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
     padding: 1rem 2rem;
     margin: 2rem auto;
@@ -93,7 +95,7 @@
   }
 
   .btn-nav {
-    background: #1BFF8C;
+    background: linear-gradient(to bottom, rgba(136, 131, 131, 0.8), rgb(27, 255, 140));
     color: #0F1117;
     padding: 0.5rem 1.2rem;
     border-radius: 999px;
@@ -134,11 +136,6 @@
     font-weight: 600;
     color: #FFFFFF;
   }
-  .hero h3 {
-    font-family: 'Inter', sans-serif;
-    font-weight: 900;
-    color: #1BFF8C;
-  }
   .hero h1 {
     font-size: 4.5rem;
     line-height: 1;
@@ -146,6 +143,11 @@
     margin-bottom: .5rem;
     color: #00FFF5;
     font-family: 'Space Grotesk', sans-serif;
+  }
+  .hero h1 span {
+    font-size: 4.5rem;
+    line-height: 1;
+    color: #fff;
   }
   .hero .subtext {
     font-size: 1rem;
@@ -244,6 +246,38 @@
   }
 
 
+/* =============================================== WHATSAPP REDIRECT STYLE =============================================== */
+    /* .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 9999;
+      width: 60px;
+      height: 60px;
+      background-color: #25D366;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease;
+    }
+
+    .whatsapp-float:hover {
+      transform: scale(1.1);
+    }
+
+    .whatsapp-float img {
+      width: 40px;
+      height: 40px;
+      object-fit: contain;
+    } */
+
+
+
+
+
+
 /* =============================================== END OF LANDING PAGE SECTION(HOME) CONTAINER =============================================== */
 
 
@@ -334,8 +368,8 @@
     padding: var(--space-sm);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
     text-align: center;
-    width: 240px;
-    height: 265px;
+    width: 255px;
+    height: 260px;
     transform: rotate(-10deg);
     transition: transform var(--transition-fast);
   }
@@ -359,11 +393,6 @@
   .photo-card p {
     font-size: 0.9rem;
     color: var(--color-bg);
-  }
-
-  @media (max-width: 768px) {
-  
-
   }
 
 
@@ -408,19 +437,16 @@
       }
 
       .navbar.expanded .menu-svg {
-          transform: rotate(45deg);
+          transform: rotate(90deg);
       }
 
       .navbar.expanded .menu-svg path {
-          d: path("M6 18L18 6M6 6l12 12"); /* Animated to X */
+          d: path("M6 18 18 6M6 6l12 12"); /* Animated to X */
       }
 
       .nav-center a {
           margin: 0.5rem 0;
           display: block;
-          font-size: 1.3rem;
-          font-family: Arial, Helvetica, sans-serif;
-          font-weight: 500;
           margin-bottom: 20px;
           line-height: 1.6;
           letter-spacing: -1.2px;
@@ -440,6 +466,13 @@
           color: #fff;
           border-radius: 999px;
       }
+
+
+ /* ==================================== HERO SIDE IMAGE ======================================== */
+
+      .screenshot {
+          display: none;
+        }
       
 
 
@@ -534,32 +567,7 @@
           border: none;
         }
 
-
-
-        /* ==================================== HERO SIDE IMAGE ======================================== */
-
-        .screenshot {
-          position: absolute;
-          right: 0;
-          top: 0;
-          width: 30em;
-          /* overflow: hidden; */
-          display: none;
-        }
-        .screenshot img {
-          width: 100%;
-          border-radius: 0 0 50% 50%; /* Curved bottom */
-          animation: bounce 2s infinite ease-in-out;
-        }
-
-        @keyframes bounce {
-            0%, 100% {
-                transform: translateY(0);
-            }
-            50% {
-                transform: translateY(-30px);
-            }
-        }
+        
 
               
 
