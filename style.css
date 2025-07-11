@@ -120,7 +120,197 @@
     transition: transform 0.3s ease;
   }
 
-/* =============================================== LANDING PAGE SECTION(HOME) CONTAINER =============================================== */
+
+
+
+/* =============================== ELEMENT FADE / ZOOM ANIMATIONS =============================== */
+  .navbar, .hero, .screenshot, .hero-buttons, .nav-center a, .nav-right {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeUp 0.8s ease forwards;
+  }
+  .navbar {
+    animation-delay: 0.2s;
+  }
+  .hero {
+    animation-delay: 0.4s;
+  }
+  .hero-buttons {
+    animation-delay: 0.6s;
+  }
+  .screenshot {
+    animation-delay: 0.8s;
+  }
+  .nav-center a:nth-child(1) { animation-delay: 0.3s; }
+  .nav-center a:nth-child(2) { animation-delay: 0.35s; }
+  .nav-center a:nth-child(3) { animation-delay: 0.4s; }
+  .nav-center a:nth-child(4) { animation-delay: 0.45s; }
+  .nav-center a:nth-child(5) { animation-delay: 0.5s; }
+  .nav-center a:nth-child(6) { animation-delay: 0.55s; }
+  .nav-right {
+    animation-delay: 0.6s;
+  }
+
+/* =============================== KEYFRAMES =============================== */
+  @keyframes fadeInScale {
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  @keyframes fadeUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+
+/* ============================================== END OF NAVIGATION CONTAINER =============================================== */
+
+
+/* ============================================== LANDING CATCHY CONTAINER =============================================== */
+
+
+
+.hero-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding: 100px 20px; */
+}
+
+.hero-box {
+  text-align: center;
+  border-radius: 20px;
+  padding: 60px 30px;
+  width: 100%;
+}
+
+.hero-box h1 {
+  font-size: 5rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+  line-height: .8;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.hero-box p {
+  color: #ddd;
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 15px 30px;
+  border-radius: 14px;
+  font-weight: 500;
+  transition: 0.3s;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1rem;
+}
+
+.btn.magenta {
+  background-color: #00FFF5;
+  color: #000;
+}
+
+.btn.Outline {
+  border: 2px solid #fff;
+  color: #fff;
+  background: transparent;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  border: none;
+}
+
+
+
+
+
+
+/* ============================================== END OF LANDING PAGE SECTION(HOME) CONTAINER ============================================= */
+
+
+/* =============================================== TOOLS I USE =============================================== */
+
+
+.tech-section {
+      max-width: 1200px;
+      margin: 50px auto;
+      padding: 30px 20px;
+      border: 1px solid #333;
+      border-radius: 12px;
+      background-color: #12151b;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .tech-section h2 {
+      font-size: 20px;
+      margin-bottom: 30px;
+      color: #fff;
+    }
+
+    .scroll-container {
+      overflow: hidden;
+      position: relative;
+    }
+
+    .scroll-track {
+      display: flex;
+      width: fit-content;
+      animation: scroll-left 20s linear infinite;
+    }
+
+    .scroll-track img {
+      width: 60px;
+      height: 60px;
+      margin: 0 25px;
+      object-fit: contain;
+      filter: brightness(1.1);
+    }
+
+    @keyframes scroll-left {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+
+
+/* =============================================== END OF TOOLS I USE =============================================== */
+
+
+
+
+
+
+
+
+
+
+/* =============================================== ABOUT PAGE SECTION(ABOUT) CONTAINER =============================================== */
+
+
+    
+      /* =============================================== LANDING PAGE SECTION(HOME) CONTAINER =============================================== */
   .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -221,146 +411,7 @@
 
 
 
-
-/* =============================== ELEMENT FADE / ZOOM ANIMATIONS =============================== */
-  .navbar, .hero, .screenshot, .hero-buttons, .nav-center a, .nav-right {
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeUp 0.8s ease forwards;
-  }
-  .navbar {
-    animation-delay: 0.2s;
-  }
-  .hero {
-    animation-delay: 0.4s;
-  }
-  .hero-buttons {
-    animation-delay: 0.6s;
-  }
-  .screenshot {
-    animation-delay: 0.8s;
-  }
-  .nav-center a:nth-child(1) { animation-delay: 0.3s; }
-  .nav-center a:nth-child(2) { animation-delay: 0.35s; }
-  .nav-center a:nth-child(3) { animation-delay: 0.4s; }
-  .nav-center a:nth-child(4) { animation-delay: 0.45s; }
-  .nav-center a:nth-child(5) { animation-delay: 0.5s; }
-  .nav-center a:nth-child(6) { animation-delay: 0.55s; }
-  .nav-right {
-    animation-delay: 0.6s;
-  }
-
-/* =============================== KEYFRAMES =============================== */
-  @keyframes fadeInScale {
-    to {
-      opacity: 1;
-      transform: scale(1);
-    }
-  }
-
-  @keyframes fadeUp {
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-
-
-/* =============================================== WHATSAPP REDIRECT STYLE =============================================== */
-    /* .whatsapp-float {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      z-index: 9999;
-      width: 60px;
-      height: 60px;
-      background-color: #25D366;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      border-radius: 50%;
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-      transition: transform 0.3s ease;
-    }
-
-    .whatsapp-float:hover {
-      transform: scale(1.1);
-    }
-
-    .whatsapp-float img {
-      width: 40px;
-      height: 40px;
-      object-fit: contain;
-    } */
-
-
-
-
-/* ============================================== END OF LANDING PAGE SECTION(HOME) CONTAINER ============================================= */
-
-
-/* =============================================== TOOLS I USE =============================================== */
-
-
-.tech-section {
-      max-width: 1200px;
-      margin: 50px auto;
-      padding: 30px 20px;
-      border: 1px solid #333;
-      border-radius: 12px;
-      background-color: #0f1728;
-      text-align: center;
-      overflow: hidden;
-    }
-
-    .tech-section h2 {
-      font-size: 20px;
-      margin-bottom: 30px;
-      color: #fff;
-    }
-
-    .scroll-container {
-      overflow: hidden;
-      position: relative;
-    }
-
-    .scroll-track {
-      display: flex;
-      width: fit-content;
-      animation: scroll-left 20s linear infinite;
-    }
-
-    .scroll-track img {
-      width: 60px;
-      height: 60px;
-      margin: 0 25px;
-      object-fit: contain;
-      filter: brightness(1.1);
-    }
-
-    @keyframes scroll-left {
-      0% {
-        transform: translateX(0);
-      }
-      100% {
-        transform: translateX(-50%);
-      }
-    }
-
-
-/* =============================================== END OF TOOLS I USE =============================================== */
-
-
-
-
-
-
-
-
-
-
-/* =============================================== ABOUT PAGE SECTION(ABOUT) CONTAINER =============================================== */
-
+  
 
 
 
@@ -402,6 +453,10 @@
     line-height: 1.7;
     margin-bottom: 1.2rem;
     color: var(--color-muted);
+  }
+
+  .about-text p span {
+    color: #00FFF5;
   }
 
   .blog-btn {
@@ -593,100 +648,140 @@
 
 
 
-  .contact-section {
-    /* text-align: center; */
-    position: relative;
-  }
+/* Layout for contact section and form side-by-side */
+.contact-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 4rem;
+  flex-wrap: wrap;
+  margin-left: 1em;
+}
 
-  .profile-header {
-    margin-top: 60px;
-    margin-left: 8em;
-  }
+.contact-section, .contact2 {
+  flex: 1;
+  min-width: 350px;
+  background: rgba(255, 255, 255, 0.03);
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 255, 245, 0.1);
+  backdrop-filter: blur(10px);
+}
 
-  .profile-pic {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    object-fit: cover;
-  }
+.profile-header h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin: 20px 0;
+  color: #fff;
+}
+.profile-header span {
+  font-weight: 800;
+  font-size: 3.2rem;
+  color: #00FFF5;
+}
 
-  .profile-header h1 {
-    font-size: 3rem;
-    font-weight: 600;
-    margin: 20px 0;
-  }
+.buttons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: .5rem;
+  margin: 2rem 0;
+}
 
-  .profile-header span {
-    font-weight: 800;
-    font-size: 4rem;
-  }
+.btn {
+  padding: 16px 85px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: 0.3s;
+  border: 2px solid #00FFF5;
+  color: #fff;
+  background: transparent;
+}
 
-  .buttons {
-    gap: 20px;
-    margin: 40px 0;
-    flex-wrap: wrap;
-    margin-left: 8em;
+.btn:hover {
+  background: #00FFF5;
+  color: #000;
+}
+
+.contact2 h2 {
+  color: #fff;
+  margin-bottom: 1.5rem;
+}
+
+.contact-form label {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #fff;
+}
+
+.textArea, .big-input {
+  background: transparent;
+  border: 1px solid #777;
+  color: #fff;
+  padding: 15px 10px;
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  outline: none;
+}
+
+.big-input {
+  height: 150px;
+  resize: vertical;
+}
+
+.submit-btn {
+  background: linear-gradient(to bottom, rgba(228, 228, 228, 0.8), rgb(27, 255, 140));
+  color: #000;
+  padding: 12px 80px;
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 1.4em;
+  font-weight: 500;
+}
+
+.submit-btn:hover {
+  background: #00FFF5;
+  color: #000;
+}
+
+footer {
+  text-align: center;
+  margin-top: 2rem;
+  color: #aaa;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 1rem;
+  font-size: 1.8rem;
+}
+
+.socials a {
+  color: #fff;
+  transition: color 0.3s;
+}
+.socials a:hover {
+  color: #00FFF5;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-wrapper {
+    flex-direction: column;
   }
 
   .btn {
-    padding: 15px 95px;
-    border-radius: 30px;
-    text-decoration: none;
-    font-weight: 500;
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    transition: 0.3s;
+    width: 100%;
+    justify-content: center;
   }
-
-  .btn i {
-    font-size: 16px;
-  }
-
-  .active {
-    background-color: #00FFF5;
-    color: #000;
-  }
-
-  .outline {
-    border: 2px solid #00FFF5;
-    color: #fff;
-  }
-
-  .btn:hover {
-    transform: scale(1.05);
-    background: #00FFF5;
-    color: #000;
-  }
-
-  footer {
-    margin-top: 40px;
-    margin-bottom: 2em;
-  }
-
-  footer p {
-    font-size: 14px;
-    color: #ccc;
-    margin-left: 9em;
-    margin-top: 2em;
-  }
-
-    .socials {
-      margin-top: 10px;
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      font-size: 30px;
-      cursor: pointer;
-    }
-    .socials a {
-      color: #fff;
-      cursor: pointer;
-    }
-
-    .socials a:hover {
-      color: #00FFF5;
-    }
+}
 
 
 
@@ -756,6 +851,33 @@
       }
 
 
+
+      
+/* ============================================== LANDING CATCHY CONTAINER =============================================== */
+
+
+
+.hero-box h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  line-height: 1;
+}
+
+.hero-box p {
+  font-size: 1.5rem;
+}
+
+.btn {
+  padding: 20px 32px;
+  font-size: 1.3rem;
+}
+
+
+
+/* ============================================== END OF LANDING PAGE SECTION(HOME) CONTAINER ============================================= */
+
+
  /* ==================================== HERO SIDE IMAGE ======================================== */
 
    .btn-dark {
@@ -772,7 +894,7 @@
 
 
 
-/* =============================================== END OF LANDING PAGE SECTION(HOME) CONTAINER =============================================== */
+/* ============================================= END OF LANDING PAGE SECTION(HOME) CONTAINER ============================================= */
 
 
 
@@ -871,6 +993,30 @@
             padding: 1em 9em;
             border-radius: 999px;
           }
+
+
+    /* ============================================== LANDING CATCHY CONTAINER =============================================== */
+
+
+        .hero-box h1 {
+          font-size: 1.5em;
+          font-weight: 600;
+          margin-bottom: 20px;
+          line-height: 1.5;
+        }
+
+        .hero-box p {
+          font-size: 1rem;
+        }
+
+        .btn {
+          padding: 20px 32px;
+          font-size: 1.3rem;
+        }
+
+
+
+    /* ============================================== END OF LANDING PAGE CONTAINER ============================================= */
 
 
           /* ============================ HERO Description ============================ */

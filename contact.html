@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>JacksonWebDev</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link rel="stylesheet" href="style.css" />
 
 <body>
@@ -42,8 +43,67 @@
 
 
 
+        <!-- =================================== EASY CONTACT MEDIA ACCESSS ===================================== -->
 
-<script src="script.js"></script>
+
+<section class="contact-wrapper" id="contact">
+  <!-- Contact Buttons & Info -->
+  <section class="contact-section">
+    <div class="profile-header">
+      <img src="jacksonbckg.jpg" alt="Profile Picture" class="profile-pic" style="width:60px; height:60px; border-radius:50%; object-fit:cover;" />
+      <h1>Let's work <br><span>together</span></h1>
+    </div>
+
+    <aside class="buttons">
+      <a href="mailto:oladapomarvel1@gmailcom" class="btn">Send us a mail <i class="fa-solid fa-location-arrow"></i></a>
+      <a href="https://wa.link/src2uq" class="btn">WhatsApp Chat <i class="fa-solid fa-location-arrow"></i></a>
+    </aside>
+
+    <aside class="buttons">
+      <a href="tel:+2349155107544" class="btn">Call <i class="fa-solid fa-location-arrow"></i></a>
+      <a href="contact.html" class="btn active">Contact Me <i class="fa-solid fa-location-arrow"></i></a>
+    </aside>
+
+    <footer>
+      <div class="socials">
+        <a href="https://www.facebook.com/share/16xsQuE8kG/"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://x.com/jacksonwebdev?t=XTtHDIWyNLND4ebJQ34izg&s=09"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+      </div>
+      
+    </footer>
+  </section>
+
+  <!-- Contact Form -->
+  <article class="contact2">
+    <h2>CONTACT FORM</h2>
+    <div class="contact-form">
+      <label for="name">Name</label>
+      <input class="textArea" type="text" id="name" placeholder="Your Name or Company Name">
+
+      <label for="email">Email</label>
+      <input class="textArea" type="text" id="email" placeholder="Your company email or your email" oninput="validateEmail()">
+      <span id="email-error" style="color: rgb(184, 18, 18); font-size: 14px;"></span>
+
+      <label for="number">Telephone</label>
+      <input class="textArea" type="number" id="number" placeholder="Your Phone Number">
+
+      <label for="message">Message</label>
+      <textarea class="big-input" id="message" placeholder="What type of website do you want to build or any question you have..."></textarea>
+
+      <button class="submit-btn" onclick="sendEmail()">Send</button>
+    </div>
+  </article>
+</section>
+
+  <p style="text-align: center;
+color: var(--color-muted);
+margin-bottom: 3em;">© 2025 JacksonWebDev. All rights reserved.</p>
+
+
+  <script src="script.js"></script>       
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
 
 </body>
