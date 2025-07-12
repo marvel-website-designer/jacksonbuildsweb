@@ -42,132 +42,137 @@
         <!-- =================================== PROJECT INCOMNG ===================================== -->
 
 
-        <style>
-  .recent-designs {
-  text-align: center;
-  color: #fff;
-  padding: 60px 20px;
-}
+<style>
+    .recent-designs {
+      text-align: center;
+      color: #fff;
+      padding: 60px 20px;
+    }
 
-.recent-designs h2 {
-  font-size: 3rem;
-  font-weight: bold;
-  margin-bottom: 10px;
-  font-family: 'Space Grotesk', sans-serif;
-  letter-spacing: -1.8px;
-}
+    .recent-designs h2 {
+      font-size: 3rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+      font-family: 'Space Grotesk', sans-serif;
+      letter-spacing: -1.8px;
+    }
 
-.recent-designs p {
-  font-size: 1.1rem;
-  color: #cfcfcf;
-  margin-bottom: 40px;
-  
-}
-
-.projects-container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 30px;
-}
-
-.project-card {
-  background: #111;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  width: 320px;
-  overflow: hidden;
-  box-shadow: 0 0 20px rgba(148, 154, 231, 0.66);
-  transition: transform 0.3s ease;
-}
-
-.project-card:hover {
-  transform: translateY(-5px);
-}
-
-.project-card img {
-  width: 100%;
-  height: 250px;
-  display: block;
-  border-bottom: 1px solid #222;
-}
-
-.project-info {
-  padding: 20px;
-  text-align: left;
-}
-
-.project-info h3 {
-  font-size: 1.3rem;
-  font-weight: 500;
-  margin-bottom: 5px;
-}
-
-.project-info p {
-  font-size: 1rem;
-  color: #ddd;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  margin-bottom: 15px;
-}
-
-.flag {
-  width: 20px;
-  height: auto;
-  border-radius: 3px;
-}
-
-.visit-btn {
-  display: inline-block;
-  border: 1px solid #ccc;
-  padding: 10px 25px;
-  color: #ccc;
-  text-decoration: none;
-  font-weight: 600;
-  border-radius: 8px;
-  transition: all 0.3s ease;
-}
-
-.visit-btn:hover {
-  background-color: #fff;
-  color: #000;
-}
-
-.visit-btn i {
-  margin-left: 10px;
-}
-
-@media (max-width: 1024px) {
+    .recent-designs p {
+      font-size: 1.1rem;
+      color: #cfcfcf;
+      margin-bottom: 40px;
+      
+    }
 
     .projects-container {
-    justify-content: center;
-  }
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
 
-  .project-card {
-    width: 45%;
-  }
+    .project-card {
+      background: #111;
+      border: 1px solid #ccc;
+      /* border-radius: 20px; */
+      width: 320px;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+      /* padding: 8px; */
+      border-top-right-radius: 30px;
+      border-top-left-radius: 30px;
+      height: 350px;
+    }
 
-}
-@media (max-width: 768px) {
-  .projects-container {
-    flex-direction: column;
-    align-items: center;
-  }
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
 
-  .project-card {
-    width: 100%;
-  }
-  .recent-designs h2 {
-    font-size: 2rem;
-    font-weight: 700;
-    margin-bottom: 10px;
-  }
-  .recent-designs p {
-    font-size: .9rem;
-    margin-bottom: 15px;
-  }
-}
+    .project-card img {
+      width: 100%;
+      height: 200px;
+      display: block;
+      border-bottom: 1px solid #222;
+      border-top-right-radius: 30px;
+      border-top-left-radius: 30px;
+    }
+
+    .project-info {
+      padding: 10px;
+      text-align: left;
+    }
+
+    .project-info h3 {
+      font-size: 1.3rem;
+      font-weight: 500;
+      /* margin-bottom: 5px; */
+    }
+
+    .project-info p {
+      font-size: 1rem;
+      color: #ddd;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 20px;
+    }
+
+    .flag {
+      width: 20px;
+      height: auto;
+      border-radius: 3px;
+    }
+
+    .visit-btn {
+      display: inline-block;
+      border: 1px solid #ccc;
+      padding: 10px 20px;
+      color: #ccc;
+      text-decoration: none;
+      font-weight: 600;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+    }
+
+    .visit-btn:hover {
+      background-color: #fff;
+      color: #000;
+    }
+
+    .visit-btn i {
+      margin-left: 10px;
+    }
+
+    @media (max-width: 1024px) {
+
+        .projects-container {
+        justify-content: center;
+      }
+
+      .project-card {
+        width: 45%;
+      }
+
+    }
+    @media (max-width: 768px) {
+      .projects-container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .project-card {
+        width: 100%;
+      }
+      .recent-designs h2 {
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 10px;
+      }
+      .recent-designs p {
+        font-size: .9rem;
+        margin-bottom: 15px;
+      }
+    }
 
 </style>
 
@@ -264,11 +269,70 @@
 </section>
 
 
-
-
-
-
         <!-- =================================== END OF NAV ===================================== -->
+
+
+
+
+      <!-- =================================================== FOOTER =================================================== -->
+
+    <section class="contact-wrapper" id="contact">
+
+      <!-- Contact Buttons & Info -->
+      <section class="contact-section">
+          <div class="profile-header">
+            <img src="jacksonbckg.jpg" alt="Profile Picture" class="profile-pic" style="width:60px; height:60px; border-radius:50%; object-fit:cover;"/>
+            <h1>Let's work <br><span>together</span></h1>
+          </div>
+
+          <aside class="buttons">
+            <a href="mailto:oladapomarvel1@gmailcom" class="btn">Send us a mail <i class="fa-solid fa-location-arrow"></i></a>
+            <a href="https://wa.link/src2uq" class="btn">WhatsApp Chat <i class="fa-solid fa-location-arrow"></i></a>
+          </aside>
+
+          <aside class="buttons">
+            <a href="tel:+2349155107544" class="btn">Call <i class="fa-solid fa-location-arrow"></i></a>
+            <a href="project.html" class="btn active">Project<i class="fa-solid fa-location-arrow"></i></a>
+          </aside>
+
+          <footer>
+            <div class="socials">
+              <a href="https://www.facebook.com/share/16xsQuE8kG/"><i class="fa-brands fa-facebook"></i></a>
+              <a href="https://x.com/jacksonwebdev?t=XTtHDIWyNLND4ebJQ34izg&s=09"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+            
+          </footer>
+        </section>
+
+      <!-- Contact Form -->
+      <article class="contact2" id="contactHome">
+        <h2>CONTACT FORM</h2>
+        <div class="contact-form">
+          <label for="name">Name</label>
+          <input class="textArea" type="text" id="name" placeholder="Your Name or Company Name">
+
+          <label for="email">Email</label>
+          <input class="textArea" type="text" id="email" placeholder="Your company email or your email" oninput="validateEmail()">
+          <span id="email-error" style="color: rgb(184, 18, 18); font-size: 14px;"></span>
+
+          <label for="number">Telephone</label>
+          <input class="textArea" type="number" id="number" placeholder="Your Phone Number">
+
+          <label for="message">Message</label>
+          <textarea class="big-input" id="message" placeholder="What type of website do you want to build or any question you have..."></textarea>
+
+          <button class="submit-btn" onclick="sendEmail()">Send</button>
+        </div>
+      </article>
+
+    </section>
+
+  <p style="text-align: center;
+    color: var(--color-muted);
+    margin-bottom: 3em;">© 2025 JacksonWebDev. All rights reserved.</p>
+
 
 
 

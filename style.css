@@ -578,7 +578,7 @@
     .btn-pink:hover {
       background: transparent;
       border: 2px solid #00FFF5;
-      color: #00FFF5;
+      color: #fff;
     }
 
     .btn-outline {
@@ -696,7 +696,7 @@
 }
 
 .btn {
-  padding: 16px 85px;
+  padding: 14px 80px;
   border-radius: 30px;
   text-decoration: none;
   font-weight: 500;
@@ -768,6 +768,9 @@ footer {
   text-align: center;
   margin-top: 2rem;
   color: #aaa;
+}
+footer p {
+  margin-top: 1.5em;
 }
 
 .socials {
@@ -967,6 +970,9 @@ footer {
 
         .contact-wrapper {
           flex-direction: column;
+        }
+        #contactHome {
+          display: none;
         }
 
 
@@ -1168,7 +1174,7 @@ footer {
       }
 
       footer {
-        margin-bottom: 2em;
+        margin-bottom: .5em;
       }
 
       footer p {
@@ -1176,6 +1182,7 @@ footer {
         color: #ccc;
         /* text-align: left; */
         margin-left: .6em;
+        margin-top: 1.5em;
       }
 
       .buttons .active {
