@@ -484,6 +484,64 @@ a:-webkit-any-link {
     color: var(--color-bg);
   }
 
+ .about-section {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: var(--space-lg) var(--space-md);
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 2rem;
+    flex-wrap: wrap;
+    font-family: var(--font-primary);
+    color: var(--color-text);
+    background-color: var(--color-bg);
+  }
+
+  .about-text {
+    flex: 1 1 50%;
+    min-width: 300px;
+  }
+
+  .about-text h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    font-family: "Winky Rough", sans-serif;
+    /* font-optical-sizing: auto;
+    font-weight: 500; */
+    color: #00FFF5;
+  }
+
+  .about-text p {
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 1.2rem;
+    color: var(--color-muted);
+  }
+
+  .about-text p span {
+    color: #00FFF5;
+  }
+
+  .blog-btn {
+    background-color: var(--color-text);
+    color: var(--color-bg);
+    border: none;
+    padding: var(--space-sm) var(--space-md);
+    border-radius: var(--radius-lg);
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+  }
+
+  .blog-btn:hover {
+    background-color: var(--color-accent-light);
+    color: var(--color-bg);
+  }
+
   .about-images {
     flex: 1 1 47%;
     display: flex;
