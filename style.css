@@ -191,6 +191,14 @@ a:-webkit-any-link {
   width: 100%;
 }
 
+.hero-box h2 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 15px;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 500;
+  color: #A0A0A0;
+}
 .hero-box h1 {
   font-size: 4.5rem;
   font-weight: 800;
@@ -899,7 +907,13 @@ a:-webkit-any-link {
 
 
     /* ============================================== LANDING CATCHY CONTAINER =============================================== */
-
+        .hero-box-h2 {
+          font-size: 16px;
+          font-weight: 600;
+          margin-bottom: 15px;
+          font-family: "Space Grotesk", sans-serif;
+          color: #bcbcbc;
+        }
 
         .hero-box h1 {
           font-size: 1.7em;
@@ -1123,54 +1137,6 @@ a:-webkit-any-link {
 
     }
 
-
-/*-----------------------------------*\
-  #BACK TO TOP
-\*-----------------------------------*/
-
-    .back-top-btn.active {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(-10px);
-}
-
-.back-top-btn {
-  position: fixed;
-  bottom: 20px;
-  right: 30px;
-  background-color: #fff;
-  color: green;
-  font-size: 22px;
-  padding: 13px;
-  border-radius: 50%;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  z-index: 4;
-  opacity: 0;
-  visibility: hidden;
-  transition: 0.25s ease;
-}
-
-.back-top-btn:is(:hover, :focus) {
-  background-color: green;
-  color: #fff;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-  transform: translateY(-5px);
-}
-
-.back-top-btn.active {
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(-10px);
-}
-ion-icon {
-  pointer-events: none;
-  --ionicon-stroke-width: 25px;
-  display: block;
-}
-
-a:-webkit-any-link {
-  text-decoration: none;
-}
 
 
 /* =============================================== END OF TOOLS I USE =============================================== */
